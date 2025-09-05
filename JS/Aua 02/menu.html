@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    
+<div class="dropdow">
+    <button id="btn" onclick="activaMenu()"> Menu </button>
+
+    <ul id="menuDrop" class="">
+        <li>Lista1</li>
+        <li>Lista2</li>
+        <li>Lista3</li>
+        <li>Lista4</li>
+    </ul>
+</div>
+
+<script>
+
+// Uma variavel menuDrop para pegar a minha lista atrave do id
+const menuDrop = document.getElementById('menuDrop')
+// const remove =  document.getElementById('menuDrop')
+
+
+// criar função para ativar o menu ao clicar
+function activaMenu(){
+    menuDrop.classList.toggle('emilly')
+    // menuDrop.classList.remove('emilly')
+
+}
+
+// // criar uma fução que remoe essa lista ao clicr no documento da pagina
+// function removeMenu(){
+//     console.log("Clicou no documento")
+//     menuDrop.classList.remove('emilly')
+// }
+
+document.addEventListener('click', function (e) {
+    e.stopPropagation()
+    console.log('CLICOU NO DOC')
+    if(!document.querySelector('dropdow').contains(e.target)){
+        menuDrop.classList.remove('emilly')
+    }
+})
+
+</script>
+
+</body>
+</html>

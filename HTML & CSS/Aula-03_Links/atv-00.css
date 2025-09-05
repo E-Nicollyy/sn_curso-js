@@ -1,0 +1,19 @@
+body{
+    text-decoration: none;
+}
+
+header{
+   width: 100vw; 
+   background-color: rgb(7, 117, 16);
+}
+
+button{
+    background-color: rgb(7, 117, 16);
+    color: aliceblue;
+    border: solid rgb(10, 10, 10);
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    justify-content: center;
+    justify-content: end;
+}

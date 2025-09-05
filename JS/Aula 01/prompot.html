@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="prompot.js"></script> -->
+    <link rel="stylesheet" href="prompot.css">
+</head>
+
+<body>
+
+    <form id="myform">
+        <h1>Formulário</h1>
+        <label for="">Digite seu nome
+            <input type="text" name="nome" id="usuario" required>
+        </label>
+
+
+        <label for="">Digite seu email
+            <input type="email" name="email" required>
+        </label>
+
+        <label for=""> Digite sua Senha
+            <input type="password" name="senha" required>
+        </label>
+
+        <!-- OUTRA POSSIBILIDADE DE RELACIONAR A LABEL -->
+        <!-- <label for="imail"></label>
+    <input type="email" name="imail" id="imail"> -->
+
+        <button type="submit">Envie</button>
+    </form>
+
+
+    <script>
+        const form = window.document.getElementById('myform')
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault()
+            const nomeUser = document.getElementById('usuario').value
+            window.alert(`Olá ${nomeUser},  seu formulário foi enviado com Sucesso!`)
+        })
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- <script>
+    let nome = window.prompt("Aaaaa")
+
+    let nota1 = Number( window.prompt("Digite nota 1"))
+    let nota2 = Number( window.prompt("Digite nota 2"))
+
+    let soma = nota1+nota2
+    window.alert(soma)
+
+    // transfrmar em número - Number.
+    // window -
+</script> -->

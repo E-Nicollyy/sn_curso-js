@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    
+</head>
+<body>
+    
+<form action="">
+
+    <h1>Login</h1>
+
+    <label for=""> E-mail 
+        <input id="email" type="text" placeholder="Ex: email@gmail.com" required >
+    </label>
+
+    <label for=""> Senha 
+        <input id="senha" type="password" placeholder="Ex: 1234@A" required>
+    </label>
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+
+    const form = document.querySelector('form')
+
+    form.addEventListener('submit', function(event){
+    event.preventDefault();
+
+    const email = document.getElementById('email'). value
+    const senha = document.getElementById('senha'). value
+
+    if(email == 'E_nicollyy@gmail.com' && senha == '@E_nicollyy3'){
+    alert("Acesso liberado")
+}
+
+else{
+    alert("Acesso Negado")
+}
+
+// document.querySelector('form').reset()
+})
+
+</script>
+
+
+</body>
+</html>

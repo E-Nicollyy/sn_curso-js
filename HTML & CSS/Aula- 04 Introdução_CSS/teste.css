@@ -1,0 +1,58 @@
+aside{
+    gap: 10px;
+    justify-content: end;
+    padding-left: 10%;
+}
+
+section{
+    width: 100vw;
+    color: aliceblue;
+    display: flex;
+}
+
+.text{
+    justify-content: start;
+    align-items: center ;
+    padding-left: 2%;
+    width: 35%;
+    text-align: center;
+    margin-top: 90px;
+    background-color: rgb(18, 19, 18);
+}
+
+body{
+    background-color: black;
+}
+
+.btn{
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.conjunto{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: rgb(8, 8, 8);
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header{
+    color: blueviolet;
+    margin-top: 0;
+}
+
+.navegacao{
+    display: flex;
+    gap: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}

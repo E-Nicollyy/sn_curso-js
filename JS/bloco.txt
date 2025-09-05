@@ -1,0 +1,14 @@
+prompot - tipo um input
+alert - como um print 
+
+addEventListener - adicione um escutador de eventos esperando acontecer algo
+getElementById - pega o elemento selecionado por id
+event.preventDefault()- previnir padrao > o evento padrao é enviar o form para algum lugar, como queremos montar o nosso padrao utilizamos o preventDefault. 
+
+value acessar esse valor, tudo o que coloquei no elemento ele pega no value
+
+    display: block; - 
+        box-sizing: border-box;
+togger - 
+ menuDrop.classList.toggle('emilly')
+ temos funçoes que recebem e outras que não recebem argumentos

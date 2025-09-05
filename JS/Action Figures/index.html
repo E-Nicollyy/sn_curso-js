@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Figures</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+       <img src="./images/icon.png" alt="logo" width="50px" height="50px">
+    </div>
+
+<nav>
+    <a href="">Home</a>
+    <a href="">Sobre</a>
+    <a href="">Contato</a>
+
+    <div class="dropdown">
+    <button onclick="ativarMenu()" id="btn"> Produtos</button>
+
+    <ul id="menu">
+
+      <li>teste</li>
+      <li>teste</li>
+      <li>teste</li>
+
+    </ul>
+  </div>
+
+</nav>
+
+</header>
+
+<section class="primeira">
+    <div class="image">
+        <img src="./images/principal0.webp" alt="" class="principal">
+    </div>
+
+</section>
+
+<div class="blog"><h1>Olhe abaixo as figuras de ação</h1> </div>
+
+<!-- =================================== SEGUNDA SESSAO - CARD ===================== -->
+
+<section class="card">
+
+  <div class="pai">
+
+      <div class="capitao">
+        <img src="./images/imgBilly.jpg" alt="capitao" width="200" height="240">
+        <h1>Billy Butcher</h1>
+        <p>Líder rebelde dos Meninos, movido por vingança contra super-heróis. Carrega segredos sombrios que impulsionam sua cruzada implacável.</p>
+        <a href="./saiba mais/saiba mais/billy.html">
+        <button class="buttonid">Saiba mais</button>
+        </a>
+      </div>
+
+
+      <div class="billy">
+        <img src="./images/imgProfundo.jpg" alt="billy"  width="200" height="240">
+        <h1>Profundo</h1>
+        <p>Membro carismático dos Sete, com poderes aquáticos e charme de astro. Sua personalidade controversa esconde fraquezas humanas inesperadas.</p>
+<a href="./saiba mais/saiba mais/profundo.html">
+        <button class="buttonid">Saiba mais</button>
+        </a>      </div>
+
+
+      <div class="black">
+        <img src="./images/luzEstrela2.webp" alt="black"  width="200" height="240">
+        <h1>Luz Estrela</h1>
+        <p>Herói enigmático dos Sete, com aura divina e habilidades luminosas. Segredos ocultos desafiam sua imagem de divindade solar.</p>
+<a href="./saiba mais/saiba mais/luz.html">
+        <button class="buttonid">Saiba mais</button>
+        </a>
+      </div>
+
+  </div>
+</section>
+
+<!-- ==================================== FORMULARIO =================== -->
+
+<section class="formulario">
+  
+  <div class="titl"><h2>Entre em contato</h2></div>
+
+  <form id="formula">
+    <label for="">
+      Nome:
+      <input type="text" id="nome" required>
+    </label>
+
+    <label for="">
+      Telefone:
+      <input type="tel" id="telefone" required placeholder="(00)00000-0000">
+    </label>
+
+    <label for="">
+      Email:
+      <input type="email" id="email" required placeholder="exempl@gmail.com">
+    </label>
+
+    <label for="" >
+      Duvida:
+      <input type="text" id="duvida">
+    </label>
+
+    <button type="submit" id="botao">Enviar</button>
+  </form>
+
+ 
+
+<div class="black-form">
+ <img class="black-form" src="./images/black55.png" alt="">
+ </div>
+
+  <div class="hol">
+    
+    <img src="./images/Homelander11.png" alt="">
+  </div>
+
+
+</section>
+
+<footer>
+   <div class="textt">&copy; WEB Design | 2025</div>
+   <div class="redessociais">
+    <img src="./images/instagram.png" alt="">
+    <img src="./images/whatsapp.png" alt="">
+    <img src="./images/facebook.png" alt="">
+   </div>
+   <div class="foot">
+    <label for="">
+      Email:
+      <input type="email" id="email" required placeholder="exempl@gmail.com">
+    </label>
+   </div>
+  
+</footer>
+
+
+<script>
+  const form= document.getElementById("formula");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    const usuario= document.getElementById("nome").value
+    alert(`olá, ${usuario} seu formulario foi enviado :)`);
+   
+
+});
+
+
+
+// menudrop
+
+    const menu=document.getElementById("menu")
+    function ativarMenu(){
+        menu.classList.toggle("ativo")
+
+        function removerMeu(){
+            menu.classList.remove("ativo")
+        }
+    
+        document.addEventListener("click", function(e){
+            e.stopImmediatePropagation()
+            if (!document.querySelector('.dropdown').contains(e.target)){
+                console.log(e.target)
+                menu.classList.remove('ativo')
+            }
+            
+        })
+        
+}
+
+</script>
+
+
+
+</body>
+</html>

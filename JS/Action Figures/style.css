@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 85vh;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+
+}
+
+header{
+    background-color: #051a2e;
+    width: 100%;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    /* espaço  */
+
+}
+
+nav{
+    display: flex;
+   justify-content: flex-end; 
+   gap: 12px;
+   margin-right: 40px;
+   padding-bottom: 10px;
+   /* margin-bottom: 40px; */
+}
+
+.logo{
+    justify-content: start;
+}
+
+.blog{
+    background-color: rgb(128, 2, 2);
+    text-align: center;
+    padding-top: 20px;
+    height: 70px;
+    font-family: "Cossette Titre", sans-serif;
+    color: white;
+
+}
+.primeira{
+    height: 80vh;
+    width: 100%;
+   
+
+}
+
+.principal{
+    width: 100%;
+    height: 80vh;
+}
+
+.card{
+    background-color: rgb(226, 45, 45);
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.pai{
+display: flex;
+gap: 160px;
+background-color:#051a2e;
+padding: 200px;
+font-family: "Epunda Slab", serif;
+
+    
+}
+
+.capitao{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Cossette Titre", sans-serif;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    height: 440px;
+    width: 400px;
+    border-radius: 30px;
+    border: 4px solid rgb(128, 2, 2);
+    font-family: "Epunda Slab", serif;
+
+      
+}
+
+.black{
+     border: 3px solid rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Cossette Titre", sans-serif;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    height: 440px;
+    width: 400px;
+    border-radius:30px;
+    border: 4px solid rgb(128, 2, 2);
+    font-family: "Epunda Slab", serif;
+
+
+    
+}
+
+.billy{
+     border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Cossette Titre", sans-serif;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    height: 440px;
+    width: 400px;
+    border-radius:30px;
+     border: 4px solid rgb(128, 2, 2);
+     font-family: "Epunda Slab", serif;
+
+}
+
+
+/* Parte formulario/Larissa */
+.formulario{
+    height: 90vh;
+    width: 100vw;
+    background-color:rgb(128, 2, 2);
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 500px;
+    height: 370px;
+   margin-left: 750px;
+
+}
+
+
+#duvida{
+    height: 80px;
+   
+
+}
+
+input{
+    height: 20px;
+    width:  300px;
+     display: block;
+     color: aliceblue;
+     
+}
+
+#botao{
+    margin-left: 300px;
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+.titl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    margin-left: 100px;
+    font-family: "Cossette Titre", sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+/* menu drop */
+
+#btn{
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#menu{
+    display: none;
+    /* sempre tem que começar co display none para ele ficar escondido */
+    list-style: none;
+    /* tira o estilo da lista */
+    color: aliceblue;
+    text-align: center;
+
+}
+
+#menu.ativo{
+    display: block;
+    /* parte do menu que vai funcionars */
+}
+
+#menu.remove{
+    display: none;
+
+}
+
+.black-form{
+  transform: translateY(-200px);
+  margin-left: 600px;
+}
+
+.hol{
+      transform: translateY(-1200px);
+
+    
+}
+
+.buttonid{
+    margin-top: 40px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: #051a2e;
+    cursor: pointer;
+    
+}
+
+
+footer{
+    background-color: black;
+   
+}
+
+.foot{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-30px);
+    padding: 10px;
+   
+
+
+}
+
+.redessociais{
+     filter: invert(100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:20px
+
+}
+
+.textt{
+    color: white;
+    padding-top: 10px;
+}
