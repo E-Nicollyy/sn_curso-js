@@ -13,22 +13,22 @@
 <header>
 
     <div class="logo">
-       <img src="./images/icon.png" alt="logo" width="50px" height="50px">
+       <img src="" alt="logo" width="50px" height="50px">
     </div>
 
 <nav>
-    <a href="">Home</a>
-    <a href="">testett</a>
-    <a href="">Contato</a>
+    <a href="./index.html">Home</a>
+    <a href="./sobre.html" target="_blank">Sobre</a>
+    <a href="#formulario">Contato</a>
 
     <div class="dropdown">
-    <button onclick="ativarMenu()" id="btn"> Produtos</button>
+    <button onclick="ativarMenu()" id="btn"> Produtos </button>
 
     <ul id="menu">
 
-      <li>teste</li>
-      <li>teste</li>
-      <li>teste</li>
+      <li> <a href="./saiba mais/saiba mais/billy.html" target="_blank"> Billy </a></li>
+      <li> <a href="./saiba mais/saiba mais/luz.html" target="_blank"> Luz Estrela </a></li>
+      <li> <a href="./saiba mais/saiba mais/profundo.html" target="_blank"> Profundo </a></li>
 
     </ul>
   </div>
@@ -44,19 +44,20 @@
 
 </section>
 
-<div class="blog"><h1>Olhe abaixo as figuras de ação</h1> </div>
 
 <!-- =================================== SEGUNDA SESSAO - CARD ===================== -->
 
 <section class="card">
 
+    <div class="blog"><h1>Olhe abaixo as figuras de ação</h1> </div>
+
   <div class="pai">
 
       <div class="capitao">
-        <img src="./images/imgBilly.jpg" alt="capitao" width="200" height="240">
-        <h1>Billy Butcher</h1>
-        <p>Líder rebelde dos Meninos, movido por vingança contra super-heróis. Carrega segredos sombrios que impulsionam sua cruzada implacável.</p>
-        <a href="./saiba mais/saiba mais/billy.html">
+        <img src="./images/billy55.jpg" alt="capitao" width="200" height="240">
+        <h1 class="juncao-card" >Billy Butcher</h1>
+        <p class="juncao-card" >Líder rebelde dos Meninos, movido por vingança contra super-heróis. Carrega segredos sombrios que impulsionam sua cruzada implacável.</p>
+        <a href="./saiba mais/saiba mais/billy.html" target="_blank">
         <button class="buttonid">Saiba mais</button>
         </a>
       </div>
@@ -64,18 +65,19 @@
 
       <div class="billy">
         <img src="./images/imgProfundo.jpg" alt="billy"  width="200" height="240">
-        <h1>Profundo</h1>
-        <p>Membro carismático dos Sete, com poderes aquáticos e charme de astro. Sua personalidade controversa esconde fraquezas humanas inesperadas.</p>
-<a href="./saiba mais/saiba mais/profundo.html">
+        <h1 class="juncao-card" >Profundo</h1>
+        <p class="juncao-card">Membro carismático dos Sete, com poderes aquáticos e charme de astro. Sua personalidade controversa esconde fraquezas humanas inesperadas.</p>
+        <a href="./saiba mais/saiba mais/profundo.html" target="_blank">
         <button class="buttonid">Saiba mais</button>
-        </a>      </div>
+        </a>
+       </div>
 
 
       <div class="black">
         <img src="./images/luzEstrela2.webp" alt="black"  width="200" height="240">
-        <h1>Luz Estrela</h1>
-        <p>Herói enigmático dos Sete, com aura divina e habilidades luminosas. Segredos ocultos desafiam sua imagem de divindade solar.</p>
-<a href="./saiba mais/saiba mais/luz.html">
+        <h1 class="juncao-card">Luz Estrela</h1>
+        <p class="juncao-card">Herói enigmático dos Sete, com aura divina e habilidades luminosas. Segredos ocultos desafiam sua imagem de divindade solar.</p>
+<a href="./saiba mais/saiba mais/luz.html " target="_blank">
         <button class="buttonid">Saiba mais</button>
         </a>
       </div>
@@ -85,14 +87,14 @@
 
 <!-- ==================================== FORMULARIO =================== -->
 
-<section class="formulario">
+<section id="formulario" class="formulario">
   
   <div class="titl"><h2>Entre em contato</h2></div>
 
   <form id="formula">
     <label for="">
       Nome:
-      <input type="text" id="nome" required>
+      <input id="input" type="text" id="nome" required>
     </label>
 
     <label for="">
